@@ -22,7 +22,7 @@ To **nie** jest zlepka Page Assist + AlfaBrowserautomation + UI-TARS w jeden mer
 
 | Path | Source | Role |
 |---|---|---|
-| `vendor/codex/` | [Karen86Tonoyan/codexOPENSOURCE](https://github.com/Karen86Tonoyan/codexOPENSOURCE) (submodule) | Codex CLI / agent |
+| `vendor/codex/` | [Karen86Tonoyan/codexOPENSOURCE](https://github.com/Karen86Tonoyan/codexOPENSOURCE) (`scripts/clone-codex.ps1`) | Codex CLI / agent |
 | `apps/ollama-app/` | lokalne `ollamaagentalfa-main` | web UI Ollama |
 | `apps/web-assistant/` | lokalne `page-assistALFA` | rozszerzenie: sidebar + chat ze stroną |
 | `config/codex-ollama.toml` | to repo | Codex → Ollama `/v1` |
@@ -34,7 +34,7 @@ To **nie** jest zlepka Page Assist + AlfaBrowserautomation + UI-TARS w jeden mer
 - model `gpt-oss:20b-gpu` (MXFP4). **Nie** `gpt-oss-20b-unblocked` (Qwen F16, 32k)
 - Node 20+ (dashboard)
 - Bun (Page Assist)
-- Git (submoduł Codex)
+- Git (clone Codex do `vendor/codex`)
 
 ## Start
 

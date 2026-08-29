@@ -1,9 +1,9 @@
 # vendor/
 
-`codex/` is a **git submodule** of https://github.com/Karen86Tonoyan/codexOPENSOURCE
+`codex/` is a **shallow clone** of https://github.com/Karen86Tonoyan/codexOPENSOURCE
 
 ```powershell
-git submodule update --init --depth 1 vendor/codex
+.\scripts\clone-codex.ps1
 ```
 
-Do not copy the full Bazel tree into this repo. Point Codex at Ollama with `scripts/use-ollama-for-codex.ps1`.
+The Bazel tree is too large to copy into this repo. Point Codex at Ollama with `scripts/use-ollama-for-codex.ps1`.
