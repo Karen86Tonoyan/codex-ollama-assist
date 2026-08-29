@@ -1,0 +1,21 @@
+# ALFA LLM Gateway Configuration
+# Cerber + Dual Engine Architecture
+
+llm:
+  default: ollama
+  allow_cloud: true
+
+ollama:
+  base_url: http://localhost:11434
+  model: qwen3:latest
+
+cerber:
+  enabled: true
+  log_decisions: true
+  block_high_risk: true
+
+cors:
+  origins:
+    - http://localhost:5173
+    - http://localhost:8080
+    - https://lovableproject.com

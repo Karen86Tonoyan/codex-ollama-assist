@@ -1,0 +1,51 @@
+{
+  "ollamaState": {
+    "searching": "正在搜尋您的 Ollama 🦙",
+    "running": "Ollama 正在運行 🦙",
+    "notRunning": "無法連接到 Ollama 🦙",
+    "connectionError": "看起來您遇到了連線錯誤，請參閱此<anchor>文件</anchor>進行故障排除。",
+    "noOllamaHint": "尚未安裝 Ollama？您可以從<anchor>Ollama 設定</anchor>中停用 Ollama 整合功能。"
+  },
+  "formError": {
+    "noModel": "請選擇一個模型",
+    "noEmbeddingModel": "請在設定 > RAG 頁面設定一個嵌入模型"
+  },
+  "form": {
+    "textarea": {
+      "placeholder": "輸入一則訊息..."
+    },
+    "webSearch": {
+      "on": "開",
+      "off": "關"
+    },
+    "thinking": {
+      "on": "開啟",
+      "off": "關閉",
+      "level": "等級",
+      "levels": {
+        "low": "低",
+        "medium": "中",
+        "high": "高"
+      }
+    }
+  },
+  "tooltip": {
+    "searchInternet": "搜尋網路",
+    "thinking": "啟用推理模式以查看模型的思考過程",
+    "speechToText": "語音轉文字",
+    "uploadImage": "上傳圖片",
+    "stopStreaming": "停止串流",
+    "knowledge": "知識",
+    "vision": "[實驗]視覺聊天",
+    "clearContext": "清除對話上下文",
+    "uploadDocuments": "上傳文件 (beta)",
+    "mcpServers": "MCP 伺服器",
+    "mcpEmpty": "尚未設定 MCP 伺服器",
+    "mcpEmptyDesc": "連接 MCP 伺服器以便在聊天中使用工具。",
+    "mcpAddServer": "新增 MCP 伺服器"
+  },
+  "sendWhenEnter": "按 Enter 送出",
+  "welcome": "你好！今天我能幫你什麼？",
+  "useOCR": "從圖片中擷取文字（OCR）",
+  "fileRetrievalEnabled": "為文件啟用 RAG 檢索"
+}

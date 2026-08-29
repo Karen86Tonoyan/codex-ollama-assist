@@ -1,0 +1,658 @@
+{
+  "generalSettings": {
+    "title": "General Settings",
+    "settings": {
+      "heading": "Web UI Settings",
+      "speechRecognitionLang": {
+        "label": "Speech Recognition Language",
+        "placeholder": "Select a language"
+      },
+      "language": {
+        "label": "Language",
+        "placeholder": "Select a language"
+      },
+      "darkMode": {
+        "label": "Change Theme",
+        "options": {
+          "light": "Light",
+          "dark": "Dark"
+        }
+      },
+      "defaultCopilotPrompt": {
+        "label": "Default Prompt for SidePanel (Copilot)",
+        "placeholder": "Select a prompt"
+      },
+      "defaultWebUIPrompt": {
+        "label": "Default Prompt for Web UI",
+        "placeholder": "Select a prompt"
+      },
+      "copilotResumeLastChat": {
+        "label": "Resume the last chat when opening the SidePanel (Copilot)"
+      },
+      "turnOnChatWithWebsite": {
+        "label": "Enable Chat with Website by default (Copilot)"
+      },
+      "webUIResumeLastChat": {
+        "label": "Resume the last chat when opening the Web UI"
+      },
+      "hideCurrentChatModelSettings": {
+        "label": "Hide the current Chat Model Settings"
+      },
+      "restoreLastChatModel": {
+        "label": "Restore last used model for previous chats"
+      },
+      "sendNotificationAfterIndexing": {
+        "label": "Send Notification After Finishing Processing the Knowledge Base"
+      },
+      "generateTitle": {
+        "label": "Generate Title using AI"
+      },
+      "ollamaStatus": {
+        "label": "Enable or disable Ollama connection status check"
+      },
+      "wideMode": {
+        "label": "Enable wide screen mode"
+      },
+      "openReasoning": {
+        "label": "Open Reasoning Collapse by default"
+      },
+      "defaultThinkingMode": {
+        "label": "Show Thinking Mode State in Forms"
+      },
+      "userChatBubble": {
+        "label": "Use Chat Bubble for User Messages"
+      },
+      "hideChatScrollbar": {
+        "label": "Hide Chat Scrollbar"
+      },
+      "enableQuoteReply": {
+        "label": "Reply to Selected Text in Assistant Messages"
+      },
+      "autoCopyResponseToClipboard": {
+        "label": "Automatically Copy Response to Clipboard"
+      },
+      "useMarkdownForUserMessage": {
+        "label": "Enable Markdown formatting for User messages"
+      },
+      "copyAsFormattedText": {
+        "label": "Copy as Formatted Text"
+      },
+      "tabMentionsEnabled": {
+        "label": "Enable Tab Mentions (@tab)"
+      },
+      "pasteLargeTextAsFile": {
+        "label": "Paste Large Text as File"
+      },
+      "ocrLanguage": {
+        "label": "Default OCR Language",
+        "placeholder": "Select an OCR language"
+      },
+      "sidepanelTemporaryChat": {
+        "label": "Enable Temporary Chat in SidePanel by default"
+      },
+      "webuiTemporaryChat": {
+        "label": "Enable Temporary Chat in Web UI by default"
+      },
+      "removeReasoningTagFromCopy": {
+        "label": "Remove Reasoning Tag from Copied Text"
+      },
+      "youtubeAutoSummarize": {
+        "label": "Show the 'Summarize' button on YouTube videos."
+      },
+      "hideReasoningWidget": {
+        "label": "Hide Reasoning Widget from AI Messages"
+      },
+      "persistChatInput": {
+        "label": "Persist Chat Input (Save unsent messages)"
+      },
+      "enableMessageQueue": {
+        "label": "Enable Message Queue While Streaming"
+      },
+      "optimizeQueueForSmallScreen": {
+        "label": "Optimize Chat UI for Small Screens"
+      },
+      "tableTextWrap": {
+        "label": "Enable Text Wrapping in Markdown Tables"
+      },
+      "showMoreForLargeMessage": {
+        "label": "Show 'Show more' for large human messages"
+      },
+      "showMessageTimestamp": {
+        "label": "Show Message Timestamp"
+      },
+      "sidebarPosition": {
+        "label": "Sidebar Position",
+        "options": {
+          "left": "Left",
+          "right": "Right"
+        }
+      },
+      "showMcpServersInChat": {
+        "label": "Show MCP Servers Toggle in Chat"
+      },
+      "enableAgentWebSearch": {
+        "label": "Use Agent Web Search (model decides when to search and fetch)"
+      },
+      "mcpHumanInLoop": {
+        "label": "Require approval before running MCP tools"
+      },
+      "showProviderNameInModelList": {
+        "label": "Show Provider Name in Model List"
+      }
+    },
+    "sidepanelRag": {
+      "heading": "Retrieval Settings",
+      "ragEnabled": {
+        "label": "Enable Embedding and Retrieval"
+      },
+      "maxWebsiteContext": {
+        "label": "Maximum Content Size for Full Context Mode",
+        "placeholder": "Content size (default 4028)"
+      }
+    },
+    "webSearch": {
+      "heading": "Manage Web Search",
+      "searchMode": {
+        "label": "Perform Simple Internet Search"
+      },
+      "provider": {
+        "label": "Search Engine",
+        "placeholder": "Select a search engine"
+      },
+      "totalSearchResults": {
+        "label": "Total Search Results",
+        "placeholder": "Enter Total Search Results"
+      },
+      "visitSpecificWebsite": {
+        "label": "Visit the website mentioned in the message"
+      },
+      "searxng": {
+        "url": {
+          "label": "SearXNG URL"
+        },
+        "apiKey": {
+          "label": "SearXNG API Key (Optional)",
+          "placeholder": "Enter your SearXNG API key"
+        }
+      },
+      "braveApi": {
+        "label": "Brave API Key",
+        "placeholder": "Enter your Brave API key"
+      },
+      "tavilyApi": {
+        "label": "Tavily API Key ",
+        "placeholder": "Enter your Tavily API key"
+      },
+      "exa": {
+        "label": "Exa API Key",
+        "placeholder": "Enter your Exa API key"
+      },
+      "googleDomain": {
+        "label": "Google Domain"
+      },
+      "searchOnByDefault": {
+        "label": "Internet Search ON by default"
+      },
+      "firecrawlAPIKey": {
+        "label": "Firecrawl API Key",
+        "placeholder": "Enter your Firecrawl API key"
+      },
+      "domainFilter": {
+        "label": "Domain Filter List",
+        "description": "Only show results from these domains",
+        "placeholder": "e.g., example.com"
+      },
+      "blockedDomains": {
+        "label": "Blocked Domains",
+        "description": "Exclude results from these domains",
+        "placeholder": "e.g., spam.com"
+      }
+    },
+    "system": {
+      "heading": "System Settings",
+      "deleteChatHistory": {
+        "label": "System Reset",
+        "button": "Reset All",
+        "confirm": "Are you sure you want to perform a system reset? This will clear all data and cannot be undone."
+      },
+      "export": {
+        "label": "Export All Data (Chat History, Knowledge Base, Prompts, and Settings)",
+        "button": "Export Data",
+        "success": "Export Success"
+      },
+      "import": {
+        "label": "Import All Data (Chat History, Knowledge Base, Prompts, and Settings)",
+        "button": "Import Data",
+        "success": "Import Success",
+        "error": "Import Error"
+      },
+      "actionIcon": {
+        "label": "Set Default Action for Extension Icon Clicks"
+      },
+      "contextMenu": {
+        "label": "Set Default action for Context Menu"
+      },
+      "fontSize": {
+        "label": "Font Size"
+      },
+      "webuiBtnSidePanel": {
+        "label": "Show Web UI Button in Side Panel"
+      },
+      "chatBackgroundImage": {
+        "label": "Chat Background Image"
+      },
+      "storageSyncEnabled": {
+        "label": "Enable Browser Storage Sync (Sync settings across devices)"
+      }
+    },
+    "tts": {
+      "heading": "Text-to-Speech Settings",
+      "ttsEnabled": {
+        "label": "Enable Text-to-Speech"
+      },
+      "ttsAutoPlay": {
+        "label": "Auto play voice response after completion"
+      },
+      "ttsProvider": {
+        "label": "Text-to-Speech Provider",
+        "placeholder": "Select a provider"
+      },
+      "ttsVoice": {
+        "label": "Text-to-Speech Voice",
+        "placeholder": "Select a voice"
+      },
+      "ssmlEnabled": {
+        "label": "Enable SSML (Speech Synthesis Markup Language)"
+      },
+      "responseSplitting": {
+        "label": "Response Splitting"
+      },
+      "removeReasoningTagTTS": {
+        "label": "Remove Reasoning Tag from TTS"
+      }
+    },
+    "stt": {
+      "heading": "Speech-to-Text Settings",
+      "autoStopTimeout": {
+        "label": "Auto Stop Timeout (ms)",
+        "placeholder": "Enter auto-stop timeout in milliseconds"
+      },
+      "autoSubmitVoiceMessage": {
+        "label": "Auto Submit Voice Message"
+      }
+    }
+  },
+  "manageModels": {
+    "title": "Manage Models",
+    "addBtn": "Add New Model",
+    "columns": {
+      "name": "Name",
+      "digest": "Digest",
+      "nickname": "Nickname",
+      "modifiedAt": "Modified At",
+      "size": "Size",
+      "actions": "Actions"
+    },
+    "expandedColumns": {
+      "parentModel": "Parent Model",
+      "format": "Format",
+      "family": "Family",
+      "parameterSize": "Parameter Size",
+      "quantizationLevel": "Quantization Level"
+    },
+    "tooltip": {
+      "delete": "Delete Model",
+      "repull": "Re-Pull Model",
+      "editNickname": "Edit Nickname"
+    },
+    "confirm": {
+      "delete": "Are you sure you want to delete this model?",
+      "repull": "Are you sure you want to re-pull this model?"
+    },
+    "modal": {
+      "title": "Add New Model",
+      "placeholder": "Enter Model Name",
+      "pull": "Pull Model"
+    },
+    "notification": {
+      "pullModel": "Pulling Model",
+      "pullModelDescription": "Pulling {{modelName}} model. For more details, check the extension icon.",
+      "cancellingDownload": "Cancelling Download",
+      "cancellingDownloadDescription": "Model download is being cancelled...",
+      "success": "Success",
+      "error": "Error",
+      "successDescription": "Successfully pulled the model",
+      "successDeleteDescription": "Successfully deleted the model",
+      "someError": "Something went wrong. Please try again later"
+    }
+  },
+  "managePrompts": {
+    "title": "Manage Prompts",
+    "addBtn": "Add New Prompt",
+    "option1": "Normal",
+    "option2": "RAG",
+    "questionPrompt": "Question Prompt",
+    "segmented": {
+      "custom": "Custom Prompts",
+      "copilot": "Copilot Prompts"
+    },
+    "columns": {
+      "title": "Title",
+      "prompt": "Prompt",
+      "type": "Prompt Type",
+      "actions": "Actions"
+    },
+    "systemPrompt": "System Prompt",
+    "quickPrompt": "Quick Prompt",
+    "tooltip": {
+      "delete": "Delete Prompt",
+      "edit": "Edit Prompt"
+    },
+    "confirm": {
+      "delete": "Are you sure you want to delete this prompt? This action cannot be undone."
+    },
+    "modal": {
+      "addTitle": "Add New Prompt",
+      "editTitle": "Edit Prompt"
+    },
+    "form": {
+      "title": {
+        "label": "Title",
+        "placeholder": "My Awesome Prompt",
+        "required": "Please enter a title"
+      },
+      "prompt": {
+        "label": "Prompt",
+        "placeholder": "Enter Prompt",
+        "required": "Please enter a prompt",
+        "help": "You can use {key} as variable in your prompt.",
+        "missingTextPlaceholder": "The {text} variable is missing in the prompt. Please add it."
+      },
+      "isSystem": {
+        "label": "Is System Prompt"
+      },
+      "btnSave": {
+        "saving": "Adding Prompt...",
+        "save": "Add Prompt"
+      },
+      "btnEdit": {
+        "saving": "Updating Prompt...",
+        "save": "Update Prompt"
+      }
+    },
+    "notification": {
+      "addSuccess": "Prompt Added",
+      "addSuccessDesc": "Prompt has been added successfully",
+      "error": "Error",
+      "someError": "Something went wrong. Please try again later",
+      "updatedSuccess": "Prompt Updated",
+      "updatedSuccessDesc": "Prompt has been updated successfully",
+      "deletedSuccess": "Prompt Deleted",
+      "deletedSuccessDesc": "Prompt has been deleted successfully"
+    }
+  },
+  "manageShare": {
+    "title": "Manage Share",
+    "heading": "Configure Page Share URL",
+    "form": {
+      "url": {
+        "label": "Page Share URL",
+        "placeholder": "Enter Page Share URL",
+        "required": "Please input your Page Share URL!",
+        "help": "For privacy reasons, you can self-host the page share and provide the URL here. <anchor>Learn More</anchor>."
+      }
+    },
+    "webshare": {
+      "heading": "Web Share",
+      "columns": {
+        "title": "Title",
+        "url": "URL",
+        "actions": "Actions"
+      },
+      "tooltip": {
+        "delete": "Delete Share"
+      },
+      "confirm": {
+        "delete": "Are you sure you want to delete this share? This action cannot be undone."
+      },
+      "label": "Manage Page Share",
+      "description": "Enable or disable the page share feature"
+    },
+    "notification": {
+      "pageShareSuccess": "Page Share URL updated successfully",
+      "someError": "Something went wrong. Please try again later",
+      "webShareDeleteSuccess": "Web Share deleted successfully"
+    }
+  },
+  "ollamaSettings": {
+    "title": "Ollama Settings",
+    "heading": "Configure Ollama",
+    "settings": {
+      "ollamaUrl": {
+        "label": "Ollama URL",
+        "placeholder": "Enter Ollama URL"
+      },
+      "globalEnable": {
+        "label": "Enable or Disable Ollama Integration Globally",
+        "warning": "By disabling Ollama integration globally, Page Assist won't fetch models from Ollama. You can still add Ollama instance from the <anchor>OpenAI compatible API</anchor> section which will work fine."
+      },
+      "advanced": {
+        "label": "Advance Ollama URL Configuration",
+        "urlRewriteEnabled": {
+          "label": "Enable or Disable Custom Origin URL"
+        },
+        "rewriteUrl": {
+          "label": "Custom Origin URL",
+          "placeholder": "Enter Custom Origin URL"
+        },
+        "autoCORSFix": {
+          "label": "Enable or Disable Automatic Ollama CORS Fix"
+        },
+        "headers": {
+          "label": "Custom Headers",
+          "add": "Add Header",
+          "key": {
+            "label": "Header Key",
+            "placeholder": "Authorization"
+          },
+          "value": {
+            "label": "Header Value",
+            "placeholder": "Bearer token"
+          }
+        },
+        "help": "If you have connection issues with Ollama on Page Assist, you can configure a custom origin URL. To learn more about the configuration, <anchor>click here</anchor>."
+      }
+    }
+  },
+  "manageSearch": {
+    "title": "Manage Web Search",
+    "heading": "Configure Web Search"
+  },
+  "mcpSettings": {
+    "title": "MCP Servers",
+    "heading": "Manage MCP Servers",
+    "subheading": "Add HTTP MCP servers for normal chat, including bearer auth and custom headers.",
+    "addBtn": "Add MCP Server",
+    "humanInLoop": {
+      "label": "Require approval before running MCP tools",
+      "description": "Recommended for MCP servers with write permissions or other side effects. You can still allow or disable individual tools below.",
+      "enabledHint": "Human-in-the-loop is enabled. MCP tools will ask for approval before they run.",
+      "disabledHint": "MCP tools run without approval by default. Turn this on when an MCP server can write files, modify data, send messages, or make other changes."
+    },
+    "table": {
+      "name": "Name",
+      "url": "URL",
+      "tools": "Cached Tools",
+      "status": "Validation",
+      "notValidated": "Not validated yet",
+      "toolsUnavailable": "No cached tools",
+      "auth": "Auth",
+      "enabled": "Enabled",
+      "actions": "Actions",
+      "toolName": "Tool Name",
+      "toolDescription": "Description"
+    },
+    "actions": {
+      "refreshTools": "Refresh tools",
+      "enable": "Enable",
+      "disable": "Disable"
+    },
+    "status": {
+      "ready": "{{count}} tools available",
+      "failed": "Validation failed",
+      "notValidated": "Not validated",
+      "lastChecked": "Last checked: {{value}}"
+    },
+    "auth": {
+      "none": "No auth",
+      "bearer": "Bearer token"
+    },
+    "modal": {
+      "titleAdd": "Add MCP Server",
+      "titleEdit": "Edit MCP Server",
+      "deleteConfirm": "Delete {{name}}?",
+      "name": {
+        "label": "Server Name",
+        "placeholder": "My MCP Server",
+        "required": "Please enter a server name"
+      },
+      "url": {
+        "label": "Server URL",
+        "placeholder": "https://example.com/mcp",
+        "help": "Only Streamable HTTP MCP endpoints over HTTP or HTTPS are supported right now.",
+        "required": "Please enter a server URL",
+        "invalid": "Please enter a valid HTTP or HTTPS URL"
+      },
+      "transportNotice": {
+        "title": "Transport support",
+        "description": "Page Assist supports Streamable HTTP MCP servers only. Legacy SSE endpoints such as /sse or /messages?sessionId=... are not supported."
+      },
+      "auth": {
+        "label": "Authentication"
+      },
+      "bearerToken": {
+        "label": "Bearer Token",
+        "placeholder": "Enter bearer token",
+        "required": "Please enter a bearer token"
+      },
+      "enabled": {
+        "label": "Global Enable"
+      },
+      "headers": {
+        "label": "Custom Headers",
+        "add": "Add Header",
+        "key": {
+          "label": "Header Key",
+          "placeholder": "X-Request-ID"
+        },
+        "value": {
+          "label": "Header Value",
+          "placeholder": "value"
+        }
+      },
+      "validation": {
+        "title": "Validate Tools",
+        "help": "Connect to the MCP server, fetch available tools, and cache them before saving. Validation expects a Streamable HTTP MCP endpoint.",
+        "button": "Validate and Load Tools",
+        "availableTools": "Available tools",
+        "idle": "Validate this server to confirm the connection and load its available tools.",
+        "stale": "Connection details changed. Validate again to refresh the cached tools.",
+        "failed": "Could not validate this MCP server.",
+        "success": "Validated successfully. {{count}} tools are available.",
+        "syncedAt": "Last synced: {{value}}",
+        "saveHint": "Saving will validate the current configuration if the cached tool list is stale or missing."
+      },
+      "submit": "Save MCP Server",
+      "update": "Update MCP Server"
+    },
+    "notification": {
+      "added": "MCP server added",
+      "updated": "MCP server updated",
+      "deleted": "MCP server deleted",
+      "validated": "Loaded {{count}} MCP tools",
+      "toolsRefreshed": "Refreshed tools for {{name}}",
+      "validationFailedTitle": "MCP validation failed",
+      "storageBlockedTitle": "Page Assist can't save data",
+      "storageBlockedDescription": "Firefox Private Mode does not support saving data to IndexedDB. Please manage MCP servers from a normal window."
+    }
+  },
+  "about": {
+    "title": "About",
+    "heading": "About",
+    "chromeVersion": "Page Assist Version",
+    "ollamaVersion": "Ollama Version",
+    "support": "You can support the Page Assist project by donating or sponsoring through the following platforms:",
+    "koFi": "Support on Ko-fi",
+    "githubSponsor": "Sponsor on GitHub",
+    "githubRepo": "GitHub Repository"
+  },
+  "manageKnowledge": {
+    "title": "Manage Knowledge",
+    "heading": "Configure Knowledge Base"
+  },
+  "rag": {
+    "title": "Pipeline Settings",
+    "ragSettings": {
+      "label": "RAG Settings",
+      "model": {
+        "label": "Embedding Model",
+        "required": "Please select a model",
+        "help": "Highly recommended to use embedding models like `nomic-embed-text`.",
+        "placeholder": "Select a model"
+      },
+      "chunkSize": {
+        "label": "Chunk Size",
+        "placeholder": "Enter Chunk Size",
+        "required": "Please enter a chunk size"
+      },
+      "chunkOverlap": {
+        "label": "Chunk Overlap",
+        "placeholder": "Enter Chunk Overlap",
+        "required": "Please enter a chunk overlap"
+      },
+      "totalFilePerKB": {
+        "label": "Knowledge Base Default File Upload Limit",
+        "placeholder": "Enter default file upload limit (e.g., 10)",
+        "required": "Please enter the default file upload limit"
+      },
+      "noOfRetrievedDocs": {
+        "label": "Number of Retrieved Documents",
+        "placeholder": "Enter Number of Retrieved Documents",
+        "required": "Please enter the number of retrieved documents"
+      },
+      "splittingSeparator": {
+        "label": "Separator",
+        "placeholder": "Enter Separator (e.g., \\n\\n)",
+        "required": "Please enter a separator"
+      },
+      "splittingStrategy": {
+        "label": "Text Splitter"
+      }
+    },
+    "prompt": {
+      "label": "Configure RAG Prompt",
+      "option1": "Normal",
+      "option2": "Web",
+      "alert": "Configuring the system prompt here is deprecated. Please use the Manage Prompts section to add or edit prompts. This section will be removed in a future release",
+      "systemPrompt": "System Prompt",
+      "systemPromptPlaceholder": "Enter System Prompt",
+      "webSearchPrompt": "Web Search Prompt",
+      "webSearchPromptHelp": "Do not remove `{search_results}` from the prompt.",
+      "webSearchPromptError": "Please enter a web search prompt",
+      "webSearchPromptPlaceholder": "Enter Web Search Prompt",
+      "webSearchFollowUpPrompt": "Web Search Follow Up Prompt",
+      "webSearchFollowUpPromptHelp": "Do not remove `{chat_history}` and `{question}` from the prompt.",
+      "webSearchFollowUpPromptError": "Please input your Web Search Follow Up Prompt!",
+      "webSearchFollowUpPromptPlaceholder": "Your Web Search Follow Up Prompt"
+    }
+  },
+  "chromeAiSettings": {
+    "title": "Chrome AI Settings"
+  },
+  "memory": {
+    "enableMemoryTool": {
+      "label": "Enable Memory Tool"
+    }
+  },
+  "mermaid": "Mermaid"
+}

@@ -1,0 +1,50 @@
+{
+    "ollamaState": {
+        "searching": "Suche nach Ihrem Ollama 🦙",
+        "running": "Ollama läuft 🦙",
+        "notRunning": "Verbindung zu Ollama nicht möglich 🦙",
+        "connectionError": "Es scheint, dass Sie ein Verbindungsproblem haben. Bitte beachten Sie diese <anchor>Dokumentation</anchor> zur Fehlerbehebung."
+    },
+    "formError": {
+        "noModel": "Bitte wählen Sie ein Modell aus",
+        "noEmbeddingModel": "Bitte legen Sie ein Embedding-Modell auf der Seite Einstellungen > RAG fest"
+    },
+    "form": {
+        "textarea": {
+            "placeholder": "Nachricht eingeben..."
+        },
+        "webSearch": {
+            "on": "An",
+            "off": "Aus"
+        },
+        "thinking": {
+            "on": "Ein",
+            "off": "Aus",
+            "level": "Stufe",
+            "levels": {
+                "low": "Niedrig",
+                "medium": "Mittel",
+                "high": "Hoch"
+            }
+        }
+    },
+    "tooltip": {
+        "searchInternet": "Internet durchsuchen",
+        "speechToText": "Sprache zu Text",
+        "uploadImage": "Bild hochladen",
+        "stopStreaming": "Streaming stoppen",
+        "knowledge": "Wissen",
+        "clearContext": "Kontext löschen",
+        "thinking": "Aktivieren Sie den Denkmodus, um den Denkprozess des Modells zu sehen",
+        "vision": "[Experimentell] Vision-Chat",
+        "uploadDocuments": "Dokumente hochladen (Beta)",
+        "mcpServers": "MCP-Server",
+        "mcpEmpty": "Keine MCP-Server konfiguriert",
+        "mcpEmptyDesc": "Verbinden Sie MCP-Server, um Tools im Chat zu verwenden.",
+        "mcpAddServer": "MCP-Server hinzufügen"
+    },
+    "sendWhenEnter": "Senden bei Drücken der Eingabetaste",
+    "welcome": "Hallo! Wie kann ich Ihnen heute helfen?",
+    "useOCR": "Text aus Bild extrahieren (OCR)",
+    "fileRetrievalEnabled": "RAG für Dokumente aktivieren"
+}

@@ -1,0 +1,50 @@
+{
+    "ollamaState": {
+        "searching": "Ollamaを検索中 🦙",
+        "running": "Ollamaが実行中 🦙",
+        "notRunning": "Ollamaに接続できません 🦙",
+        "connectionError": "接続エラーが発生しているようです。トラブルシューティングについては<anchor>ドキュメント</anchor>をご覧ください。"
+    },
+    "formError": {
+        "noModel": "モデルを選択してください",
+        "noEmbeddingModel": "設定 > RAGページでembeddingモデルを設定してください"
+    },
+    "form": {
+        "textarea": {
+            "placeholder": "メッセージを入力..."
+        },
+        "webSearch": {
+            "on": "オン",
+            "off": "オフ"
+        },
+        "thinking": {
+            "on": "オン",
+            "off": "オフ",
+            "level": "レベル",
+            "levels": {
+                "low": "低",
+                "medium": "中",
+                "high": "高"
+            }
+        }
+    },
+    "tooltip": {
+        "searchInternet": "インターネットを検索",
+        "thinking": "推論モードを有効にして、モデルの思考プロセスを確認",
+        "speechToText": "音声入力",
+        "uploadImage": "画像をアップロード",
+        "stopStreaming": "ストリーミングを停止",
+        "knowledge": "知識",
+        "vision": "[実験的] ビジョンチャット",
+        "clearContext": "コンテキストをクリア",
+        "uploadDocuments": "ドキュメントをアップロード (beta)",
+        "mcpServers": "MCPサーバー",
+        "mcpEmpty": "MCPサーバーが設定されていません",
+        "mcpEmptyDesc": "チャットでツールを使用するためにMCPサーバーを接続してください。",
+        "mcpAddServer": "MCPサーバーを追加"
+    },
+    "sendWhenEnter": "Enterキーを押すと送信",
+    "welcome": "こんにちは！本日はどのようなお手伝いができますか？",
+    "useOCR": "画像からテキストを抽出（OCR）",
+    "fileRetrievalEnabled": "ドキュメントのRAGを有効にする"
+}

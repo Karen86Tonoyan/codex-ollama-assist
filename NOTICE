@@ -1,0 +1,8 @@
+This repository combines three local/open-source pieces behind one Ollama endpoint.
+
+- vendor/codex          → https://github.com/Karen86Tonoyan/codexOPENSOURCE  (Apache-2.0)
+- apps/web-assistant    → Page Assist fork (see apps/web-assistant/LICENCE)
+- apps/ollama-app       → local Ollama dashboard (ollamaagentalfa)
+
+Glue (config/, scripts/, this NOTICE) is provided as-is for the machine owner.
+Do not push secrets, Chrome cookies, or BitLocker recovery files.

@@ -1,0 +1,32 @@
+{
+    "newChat": "Neuer Chat",
+    "selectAPrompt": "Wähle eine Eingabeaufforderung",
+    "githubRepository": "GitHub-Repository",
+    "settings": "Einstellungen",
+    "sidebarTitle": "Chat-Verlauf",
+    "error": "Fehler",
+    "somethingWentWrong": "Etwas ist schiefgelaufen",
+    "validationSelectModel": "Bitte wähle ein Modell aus, um fortzufahren",
+    "deleteHistoryConfirmation": "Bist du sicher, dass du diesen Verlauf löschen möchtest?",
+    "editHistoryTitle": "Gib einen neuen Titel ein",
+    "temporaryChat": "Temporärer Chat",
+    "more": {
+        "copy": {
+            "group": "Kopieren",
+            "asText": "Als Text kopieren",
+            "asMarkdown": "Als Markdown kopieren",
+            "success": "In die Zwischenablage kopiert!"
+        },
+        "download": {
+            "group": "Herunterladen",
+            "text": "Textdatei (.txt)",
+            "markdown": "Markdown (.md)",
+            "json": "JSON-Datei (.json)",
+            "image": "Bild (.png)"
+        },
+        "share": "Teilen"
+    },
+    "chatSaved": "Chat gespeichert",
+    "temporaryChatSavedSuccessfully": "Ihr temporärer Chat wurde erfolgreich gespeichert",
+    "failedToSaveTemporaryChat": "Temporärer Chat konnte nicht gespeichert werden. Bitte versuchen Sie es erneut."
+}

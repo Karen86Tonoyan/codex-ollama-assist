@@ -1,0 +1,13 @@
+{
+  "name": "codex-ollama-assist",
+  "private": true,
+  "version": "0.1.0",
+  "description": "One repo: Codex OSS + Ollama dashboard + Page Assist web UI, all talking to local Ollama.",
+  "scripts": {
+    "doctor": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/doctor.ps1",
+    "start": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/start-stack.ps1",
+    "codex:ollama": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/use-ollama-for-codex.ps1",
+    "web:dev": "npm --prefix apps/ollama-app run dev",
+    "assist:build": "npm --prefix apps/web-assistant run build:chrome"
+  }
+}

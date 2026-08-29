@@ -1,0 +1,17 @@
+# Optional. This PC already runs Ollama natively — prefer scripts/start-stack.ps1.
+# Use compose only when you want a boxed Ollama on 11434.
+
+services:
+  ollama:
+    image: ollama/ollama:latest
+    ports:
+      - "127.0.0.1:11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    environment:
+      OLLAMA_ORIGINS: "*"
+    gpus: all
+    restart: unless-stopped
+
+volumes:
+  ollama_data:

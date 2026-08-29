@@ -1,0 +1,32 @@
+{
+  "newChat": "新しいチャット",
+  "selectAPrompt": "プロンプトを選択",
+  "githubRepository": "GitHubリポジトリ",
+  "settings": "設定",
+  "sidebarTitle": "チャット履歴",
+  "error": "エラー",
+  "somethingWentWrong": "何かが間違っています",
+  "validationSelectModel": "続行するにはモデルを選択してください",
+  "deleteHistoryConfirmation": "この履歴を削除しますか?",
+  "editHistoryTitle": "新しいタイトルを入力",
+  "temporaryChat": "一時的なチャット",
+  "more": {
+    "copy": {
+      "group": "コピー",
+      "asText": "テキストとしてコピー",
+      "asMarkdown": "Markdownとしてコピー",
+      "success": "クリップボードにコピーしました！"
+    },
+    "download": {
+      "group": "ダウンロード",
+      "text": "テキストファイル (.txt)",
+      "markdown": "Markdownファイル (.md)",
+      "json": "JSONファイル (.json)",
+      "image": "画像 (.png)"
+    },
+    "share": "共有"
+  },
+  "chatSaved": "チャットを保存しました",
+  "temporaryChatSavedSuccessfully": "一時的なチャットが正常に保存されました",
+  "failedToSaveTemporaryChat": "一時的なチャットの保存に失敗しました。もう一度お試しください。"
+}

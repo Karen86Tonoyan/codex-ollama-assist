@@ -1,0 +1,645 @@
+{
+  "generalSettings": {
+    "title": "Paramètres généraux",
+    "settings": {
+      "heading": "Paramètres de l'interface Web",
+      "speechRecognitionLang": {
+        "label": "Langue de la reconnaissance vocale",
+        "placeholder": "Sélectionner une langue"
+      },
+      "language": {
+        "label": "Langue",
+        "placeholder": "Sélectionner une langue"
+      },
+      "darkMode": {
+        "label": "Changer de thème",
+        "options": {
+          "light": "Clair",
+          "dark": "Sombre"
+        }
+      },
+      "copilotResumeLastChat": {
+        "label": "Reprendre la dernière conversation lors de l'ouverture du panneau latéral (Copilot)"
+      },
+      "turnOnChatWithWebsite": {
+        "label": "Activer le chat avec le site Web par défaut (Copilot)"
+      },
+      "webUIResumeLastChat": {
+        "label": "Reprendre la dernière conversation lors de l'ouverture de l'interface Web"
+      },
+      "hideCurrentChatModelSettings": {
+        "label": "Masquer les paramètres actuels du modèle de chat"
+      },
+      "restoreLastChatModel": {
+        "label": "Restaurer le dernier modèle utilisé pour les conversations précédentes"
+      },
+      "sendNotificationAfterIndexing": {
+        "label": "Envoyer une notification après avoir terminé le traitement de la base de connaissances"
+      },
+      "generateTitle": {
+        "label": "Générer le titre en utilisant l'IA"
+      },
+      "ollamaStatus": {
+        "label": "Activer ou désactiver la vérification de l'état de la connexion Ollama"
+      },
+      "wideMode": {
+        "label": "Activer le mode écran large"
+      },
+      "openReasoning": {
+        "label": "Déplier par défaut le raisonnement"
+      },
+      "userChatBubble": {
+        "label": "Utiliser une bulle de discussion pour les messages de l'utilisateur"
+      },
+      "autoCopyResponseToClipboard": {
+        "label": "Copier automatiquement la réponse dans le presse-papiers"
+      },
+      "useMarkdownForUserMessage": {
+        "label": "Activer le formatage Markdown pour les messages de l'utilisateur"
+      },
+      "copyAsFormattedText": {
+        "label": "Copier en tant que texte formaté"
+      },
+      "tabMentionsEnabled": {
+        "label": "Activer les mentions d'onglets (@tab)"
+      },
+      "pasteLargeTextAsFile": {
+        "label": "Coller le texte volumineux en tant que fichier"
+      },
+      "sidepanelTemporaryChat": {
+        "label": "Activer le chat temporaire dans le panneau latéral par défaut"
+      },
+      "defaultCopilotPrompt": {
+        "label": "Prompt par défaut pour le panneau latéral (Copilot)",
+        "placeholder": "Sélectionner un prompt"
+      },
+      "defaultThinkingMode": {
+        "label": "Afficher l'état du mode de réflexion dans les formulaires"
+      },
+      "defaultWebUIPrompt": {
+        "label": "Prompt par défaut pour l'interface Web",
+        "placeholder": "Sélectionner un prompt"
+      },
+      "enableMessageQueue": {
+        "label": "Activer la file d'attente des messages pendant le streaming"
+      },
+      "hideReasoningWidget": {
+        "label": "Masquer le widget de raisonnement des messages IA"
+      },
+      "ocrLanguage": {
+        "label": "Langue OCR par défaut",
+        "placeholder": "Sélectionner une langue OCR"
+      },
+      "optimizeQueueForSmallScreen": {
+        "label": "Optimiser l'interface de chat pour les petits écrans"
+      },
+      "persistChatInput": {
+        "label": "Conserver la saisie du chat (enregistrer les messages non envoyés)"
+      },
+      "removeReasoningTagFromCopy": {
+        "label": "Supprimer la balise de raisonnement du texte copié"
+      },
+      "showMoreForLargeMessage": {
+        "label": "Afficher « Voir plus » pour les longs messages utilisateur"
+      },
+      "sidebarPosition": {
+        "label": "Position de la barre latérale",
+        "options": {
+          "left": "Gauche",
+          "right": "Droite"
+        }
+      },
+      "tableTextWrap": {
+        "label": "Activer le retour à la ligne dans les tableaux Markdown"
+      },
+      "webuiTemporaryChat": {
+        "label": "Activer le chat temporaire dans l'interface Web par défaut"
+      },
+      "youtubeAutoSummarize": {
+        "label": "Afficher le bouton « Résumer » sur les vidéos YouTube."
+      },
+      "showMcpServersInChat": {
+        "label": "Afficher le sélecteur de serveurs MCP dans la conversation"
+      },
+      "enableAgentWebSearch": {
+        "label": "Utiliser la recherche web par agent (le modèle décide quand rechercher et récupérer)"
+      },
+      "mcpHumanInLoop": {
+        "label": "Exiger une approbation avant d'exécuter les outils MCP"
+      },
+      "showProviderNameInModelList": {
+        "label": "Afficher le nom du fournisseur dans la liste des modèles"
+      }
+    },
+    "sidepanelRag": {
+      "heading": "Paramètres de récupération",
+      "ragEnabled": {
+        "label": "Activer l'intégration et la récupération"
+      },
+      "maxWebsiteContext": {
+        "label": "Taille maximale du contenu pour le mode contexte complet",
+        "placeholder": "Taille du contenu (par défaut 4028)"
+      }
+    },
+    "webSearch": {
+      "heading": "Gérer la recherche Web",
+      "searchMode": {
+        "label": "Effectuer une simple recherche sur Internet"
+      },
+      "provider": {
+        "label": "Moteur de recherche",
+        "placeholder": "Sélectionner un moteur de recherche"
+      },
+      "totalSearchResults": {
+        "label": "Nombre total de résultats de recherche",
+        "placeholder": "Entrer le nombre total de résultats de recherche"
+      },
+      "visitSpecificWebsite": {
+        "label": "Visiter le site Web mentionné dans le message"
+      },
+      "searxng": {
+        "url": {
+          "label": "URL SearXNG"
+        }
+      },
+      "braveApi": {
+        "label": "Clé API Brave",
+        "placeholder": "Entrer votre clé API Brave"
+      },
+      "googleDomain": {
+        "label": "Domaine Google"
+      },
+      "searchOnByDefault": {
+        "label": "Recherche Internet activée par défaut"
+      },
+      "blockedDomains": {
+        "description": "Exclure les résultats provenant de ces domaines",
+        "label": "Domaines bloqués",
+        "placeholder": "ex. spam.com"
+      },
+      "domainFilter": {
+        "description": "Afficher uniquement les résultats provenant de ces domaines",
+        "label": "Liste de filtres de domaines",
+        "placeholder": "ex. example.com"
+      },
+      "exa": {
+        "label": "Clé API Exa",
+        "placeholder": "Entrer votre clé API Exa"
+      },
+      "firecrawlAPIKey": {
+        "label": "Clé API Firecrawl",
+        "placeholder": "Entrer votre clé API Firecrawl"
+      },
+      "tavilyApi": {
+        "label": "Clé API Tavily",
+        "placeholder": "Entrer votre clé API Tavily"
+      }
+    },
+    "system": {
+      "heading": "Paramètres système",
+      "storageSyncEnabled": {
+        "label": "Activer la synchronisation du stockage du navigateur (synchroniser les paramètres entre les appareils)"
+      },
+      "deleteChatHistory": {
+        "label": "Réinitialisation du système",
+        "button": "Tout réinitialiser",
+        "confirm": "Êtes-vous sûr de vouloir effectuer une réinitialisation du système ? Cela effacera toutes les données et ne pourra pas être annulé."
+      },
+      "export": {
+        "label": "Exporter toutes les données (historique de chat, base de connaissances, prompts et paramètres)",
+        "button": "Exporter les données",
+        "success": "Exportation réussie"
+      },
+      "import": {
+        "label": "Importer toutes les données (historique de chat, base de connaissances, prompts et paramètres)",
+        "button": "Importer les données",
+        "success": "Importation réussie",
+        "error": "Erreur d’importation"
+      },
+      "actionIcon": {
+        "label": "Définir l'action par défaut pour les clics sur l'icône de l'extension"
+      },
+      "chatBackgroundImage": {
+        "label": "Image d'arrière-plan du chat"
+      },
+      "contextMenu": {
+        "label": "Définir l'action par défaut pour le menu contextuel"
+      },
+      "fontSize": {
+        "label": "Taille de police"
+      },
+      "webuiBtnSidePanel": {
+        "label": "Afficher le bouton Web UI dans le panneau latéral"
+      }
+    },
+    "tts": {
+      "heading": "Paramètres de synthèse vocale",
+      "ttsEnabled": {
+        "label": "Activer la synthèse vocale"
+      },
+      "ttsAutoPlay": {
+        "label": "Lecture automatique de la réponse vocale après la fin"
+      },
+      "ttsProvider": {
+        "label": "Fournisseur de synthèse vocale",
+        "placeholder": "Sélectionnez un fournisseur"
+      },
+      "ttsVoice": {
+        "label": "Voix de synthèse vocale",
+        "placeholder": "Sélectionner une voix"
+      },
+      "ssmlEnabled": {
+        "label": "Activer SSML (langage de balisage de synthèse vocale)"
+      },
+      "responseSplitting": {
+        "label": "Fractionnement de la réponse"
+      },
+      "removeReasoningTagTTS": {
+        "label": "Supprimer la balise de raisonnement de la synthèse vocale"
+      }
+    },
+    "stt": {
+      "heading": "Paramètres de reconnaissance vocale",
+      "autoStopTimeout": {
+        "label": "Délai d'arrêt automatique (ms)",
+        "placeholder": "Entrez le délai d'arrêt automatique en millisecondes"
+      },
+      "autoSubmitVoiceMessage": {
+        "label": "Envoi automatique du message vocal"
+      }
+    }
+  },
+  "manageModels": {
+    "title": "Gérer les modèles",
+    "addBtn": "Ajouter un nouveau modèle",
+    "columns": {
+      "name": "Nom",
+      "digest": "Empreinte",
+      "nickname": "Alias",
+      "modifiedAt": "Modifié",
+      "size": "Taille",
+      "actions": "Actions"
+    },
+    "expandedColumns": {
+      "parentModel": "Modèle parent",
+      "format": "Format",
+      "family": "Famille",
+      "parameterSize": "Taille des paramètres",
+      "quantizationLevel": "Niveau de quantification"
+    },
+    "tooltip": {
+      "delete": "Supprimer le modèle",
+      "repull": "Recharger le modèle",
+      "editNickname": "Renommer"
+    },
+    "confirm": {
+      "delete": "Êtes-vous sûr de vouloir supprimer ce modèle ?",
+      "repull": "Êtes-vous sûr de vouloir recharger ce modèle ?"
+    },
+    "modal": {
+      "title": "Ajouter un nouveau modèle",
+      "placeholder": "Entrer le nom du modèle",
+      "pull": "Récupérer le Modèle"
+    },
+    "notification": {
+      "pullModel": "Récupération du modèle",
+      "pullModelDescription": "Récupération du modèle {{modelName}}. Pour plus de détails, vérifiez l'icône de l'extension.",
+      "success": "Succès",
+      "error": "Erreur",
+      "successDescription": "Modèle récupéré avec succès",
+      "successDeleteDescription": "Modèle supprimé avec succès",
+      "someError": "Une erreur s'est produite. Veuillez réessayer plus tard",
+      "cancellingDownload": "Annulation du téléchargement",
+      "cancellingDownloadDescription": "Le téléchargement du modèle est en cours d'annulation..."
+    }
+  },
+  "managePrompts": {
+    "title": "Gérer les prompts",
+    "addBtn": "Ajouter un nouveau prompt",
+    "option1": "Normale",
+    "option2": "RAG",
+    "questionPrompt": "Prompt de question",
+    "segmented": {
+      "custom": "Prompts personnalisées",
+      "copilot": "Prompts Copilot"
+    },
+    "columns": {
+      "title": "Titre",
+      "prompt": "Prompt",
+      "type": "Type de prompt",
+      "actions": "Actions"
+    },
+    "systemPrompt": "Prompt système",
+    "quickPrompt": "Prompt rapide",
+    "tooltip": {
+      "delete": "Supprimer le prompt",
+      "edit": "Modifier le prompt"
+    },
+    "confirm": {
+      "delete": "Êtes-vous sûr de vouloir supprimer ce prompt ? Cette action ne peut pas être annulée."
+    },
+    "modal": {
+      "addTitle": "Ajouter un nouveau prompt",
+      "editTitle": "Modifier le prompt"
+    },
+    "form": {
+      "title": {
+        "label": "Titre",
+        "placeholder": "Mon super prompt",
+        "required": "Veuillez entrer un titre"
+      },
+      "prompt": {
+        "label": "Prompt",
+        "placeholder": "Entrer le prompt",
+        "required": "Veuillez entrer un prompt",
+        "help": "Vous pouvez utiliser {key} comme variable dans votre prompt.",
+        "missingTextPlaceholder": "La variable {text} est manquante dans le message. Veuillez l'ajouter."
+      },
+      "isSystem": {
+        "label": "Est un prompt système"
+      },
+      "btnSave": {
+        "saving": "Ajout du prompt...",
+        "save": "Ajouter un prompt"
+      },
+      "btnEdit": {
+        "saving": "Mise à jour du prompt...",
+        "save": "Modifier le prompt"
+      }
+    },
+    "notification": {
+      "addSuccess": "Prompt ajouté",
+      "addSuccessDesc": "Le prompt a été ajouté avec succès",
+      "error": "Erreur",
+      "someError": "Une erreur s'est produite. Veuillez réessayer plus tard",
+      "updatedSuccess": "Prompt mis à jour",
+      "updatedSuccessDesc": "Le prompt a été mis à jour avec succès",
+      "deletedSuccess": "Prompt supprimé",
+      "deletedSuccessDesc": "Le prompt a été supprimé avec succès"
+    }
+  },
+  "manageShare": {
+    "title": "Gérer le partage",
+    "heading": "Configurer l'URL de partage de la page",
+    "form": {
+      "url": {
+        "label": "URL de partage de page",
+        "placeholder": "Entrer l'URL de partage de la page",
+        "required": "Veuillez saisir URL de partage de votre page!",
+        "help": "Pour des raisons de confidentialité, vous pouvez auto-héberger le partage de la page et fournir l'URL ici.<anchor>En savoir plus</anchor>."
+      }
+    },
+    "webshare": {
+      "heading": "Partage Web",
+      "columns": {
+        "title": "Titre",
+        "url": "URL",
+        "actions": "Actions"
+      },
+      "tooltip": {
+        "delete": "Supprimer le partage"
+      },
+      "confirm": {
+        "delete": "Êtes-vous sûr de vouloir supprimer ce partage ? Cette action ne peut pas être annulée."
+      },
+      "label": "Gérer le partage de pages",
+      "description": "Activer ou désactiver la fonction de partage de page"
+    },
+    "notification": {
+      "pageShareSuccess": "URL de partage de page mise à jour avec succès",
+      "someError": "Une erreur s'est produite. Veuillez réessayer plus tard",
+      "webShareDeleteSuccess": "Partage Web supprimé avec succès"
+    }
+  },
+  "ollamaSettings": {
+    "title": "Paramètres d'Ollama",
+    "heading": "Configurer Ollama",
+    "settings": {
+      "ollamaUrl": {
+        "label": "URL d'Ollama",
+        "placeholder": "Entrer l'URL d'Ollama"
+      },
+      "globalEnable": {
+        "label": "Activer ou désactiver l'intégration Ollama globalement",
+        "warning": "En désactivant l'intégration Ollama globalement, Page Assist ne récupérera pas les modèles d'Ollama. Vous pouvez toujours ajouter une instance Ollama depuis la section <anchor>API compatible OpenAI</anchor> qui fonctionnera correctement."
+      },
+      "advanced": {
+        "label": "Configuration avancée de l'URL d'Ollama",
+        "urlRewriteEnabled": {
+          "label": "Activer ou désactiver l'URL d'origine personnalisée"
+        },
+        "rewriteUrl": {
+          "label": "URL d'origine personnalisée",
+          "placeholder": "Entrer l'URL d'origine personnalisée"
+        },
+        "autoCORSFix": {
+          "label": "Activer ou désactiver la correction automatique CORS d'Ollama"
+        },
+        "headers": {
+          "label": "En-têtes personnalisés",
+          "add": "Ajouter un en-tête",
+          "key": {
+            "label": "Clé de l'en-tête",
+            "placeholder": "Autorisation"
+          },
+          "value": {
+            "label": "Valeur de l'en-tête",
+            "placeholder": "Jeton Bearer"
+          }
+        },
+        "help": "Si vous rencontrez des problèmes de connexion avec Ollama sur Page Assist, vous pouvez configurer une URL d'origine personnalisée. Pour en savoir plus sur la configuration, <anchor>cliquez ici</anchor>."
+      }
+    }
+  },
+  "manageSearch": {
+    "title": "Gérer la recherche Web",
+    "heading": "Configurer la recherche Web"
+  },
+  "about": {
+    "title": "À propos",
+    "heading": "À propos",
+    "chromeVersion": "Version de Page Assist",
+    "ollamaVersion": "Version d'Ollama",
+    "support": "Vous pouvez soutenir le projet Page Assist en faisant un don ou en parrainant via les plateformes suivantes :",
+    "koFi": "Soutenir sur Ko-fi",
+    "githubSponsor": "Parrainer sur GitHub",
+    "githubRepo": "Dépôt GitHub"
+  },
+  "manageKnowledge": {
+    "title": "Gérer les connaissances",
+    "heading": "Configurer la base de connaissances"
+  },
+  "rag": {
+    "title": "Paramètres Pipeline",
+    "ragSettings": {
+      "label": "Paramètres RAG",
+      "model": {
+        "label": "Modèle d'embedding",
+        "required": "Veuillez sélectionner un modèle",
+        "help": "Fortement recommandé d'utiliser des modèles d'embedding comme «momic-embed-text».",
+        "placeholder": "Sélectionner un modèle"
+      },
+      "chunkSize": {
+        "label": "Taille des Segments",
+        "placeholder": "Entrer la taille des segments",
+        "required": "Veuillez entrer une taille de segment"
+      },
+      "chunkOverlap": {
+        "label": "Chevauchement des segments",
+        "placeholder": "Entrer le chevauchement des segments",
+        "required": "Veuillez entrer un chevauchement de segment"
+      },
+      "totalFilePerKB": {
+        "label": "Limite de téléchargement de fichiers par défaut de la base de connaissances",
+        "placeholder": "Entrer la limite de téléchargement de fichiers par défaut (par exemple, 10)",
+        "required": "Veuillez entrer la limite de téléchargement de fichiers par défaut"
+      },
+      "noOfRetrievedDocs": {
+        "label": "Nombre de documents récupérés",
+        "placeholder": "Entrer le nombre de documents récupérés",
+        "required": "Veuillez entrer le nombre de documents récupérés"
+      },
+      "splittingSeparator": {
+        "label": "Séparateur",
+        "placeholder": "Entrer le séparateur (par exemple, \\n\\n)",
+        "required": "Veuillez entrer un séparateur"
+      },
+      "splittingStrategy": {
+        "label": "Diviseur de texte"
+      }
+    },
+    "prompt": {
+      "label": "Configurer le prompt RAG",
+      "option1": "Normal",
+      "option2": "Web",
+      "alert": "La configuration du prompt système ici est obsolète. Veuillez utiliser la section Gérer les prompts pour ajouter ou modifier des prompts. Cette section sera supprimée dans une prochaine version",
+      "systemPrompt": "Prompt système",
+      "systemPromptPlaceholder": "Entrer le prompt système",
+      "webSearchPrompt": "Prompt de recherche Web",
+      "webSearchPromptHelp": "Ne supprimez pas `{search_results}` du prompt.",
+      "webSearchPromptError": "Veuillez entrer un prompt de recherche Web",
+      "webSearchPromptPlaceholder": "Entrer le prompt de recherche Web",
+      "webSearchFollowUpPrompt": "Prompt de suivi de recherche Web",
+      "webSearchFollowUpPromptHelp": "Ne supprimez pas `{chat_history}` et `{question}` du prompt.",
+      "webSearchFollowUpPromptError": "Veuillez saisir votre prompt de suivi de recherche Web !",
+      "webSearchFollowUpPromptPlaceholder": "Votre prompt de suivi de recherche Web"
+    }
+  },
+  "chromeAiSettings": {
+    "title": "Paramètres Chrome AI"
+  },
+  "mermaid": "Mermaid",
+  "mcpSettings": {
+    "title": "Serveurs MCP",
+    "heading": "Gérer les serveurs MCP",
+    "subheading": "Ajoutez des serveurs MCP HTTP pour le chat normal, y compris l'authentification bearer et les en-têtes personnalisés.",
+    "addBtn": "Ajouter un serveur MCP",
+    "humanInLoop": {
+      "label": "Exiger une approbation avant d'exécuter les outils MCP",
+      "description": "Recommandé pour les serveurs MCP disposant d'autorisations d'écriture ou d'autres effets secondaires. Vous pouvez toujours autoriser ou désactiver des outils individuels ci-dessous.",
+      "enabledHint": "L'intervention humaine est activée. Les outils MCP demanderont une approbation avant de s'exécuter.",
+      "disabledHint": "Les outils MCP s'exécutent sans approbation par défaut. Activez cette option lorsqu'un serveur MCP peut écrire des fichiers, modifier des données, envoyer des messages ou effectuer d'autres modifications."
+    },
+    "table": {
+      "name": "Nom",
+      "url": "URL",
+      "tools": "Outils en cache",
+      "status": "Validation",
+      "notValidated": "Pas encore validé",
+      "toolsUnavailable": "Aucun outil en cache",
+      "auth": "Authentification",
+      "enabled": "Activé",
+      "actions": "Actions",
+      "toolName": "Nom de l'outil",
+      "toolDescription": "Description"
+    },
+    "actions": {
+      "refreshTools": "Actualiser les outils",
+      "enable": "Activer",
+      "disable": "Désactiver"
+    },
+    "status": {
+      "ready": "{{count}} outils disponibles",
+      "failed": "Échec de la validation",
+      "notValidated": "Non validé",
+      "lastChecked": "Dernière vérification : {{value}}"
+    },
+    "auth": {
+      "none": "Aucune authentification",
+      "bearer": "Jeton bearer"
+    },
+    "modal": {
+      "titleAdd": "Ajouter un serveur MCP",
+      "titleEdit": "Modifier le serveur MCP",
+      "deleteConfirm": "Supprimer {{name}} ?",
+      "name": {
+        "label": "Nom du serveur",
+        "placeholder": "Mon serveur MCP",
+        "required": "Veuillez saisir un nom de serveur"
+      },
+      "url": {
+        "label": "URL du serveur",
+        "placeholder": "https://example.com/mcp",
+        "help": "Seuls les points de terminaison MCP HTTP Streamable via HTTP ou HTTPS sont pris en charge pour le moment.",
+        "required": "Veuillez saisir une URL de serveur",
+        "invalid": "Veuillez saisir une URL HTTP ou HTTPS valide"
+      },
+      "transportNotice": {
+        "title": "Prise en charge du transport",
+        "description": "Page Assist prend en charge uniquement les serveurs MCP HTTP Streamable. Les anciens points de terminaison SSE tels que /sse ou /messages?sessionId=... ne sont pas pris en charge."
+      },
+      "auth": {
+        "label": "Authentification"
+      },
+      "bearerToken": {
+        "label": "Jeton bearer",
+        "placeholder": "Saisir le jeton bearer",
+        "required": "Veuillez saisir un jeton bearer"
+      },
+      "enabled": {
+        "label": "Activation globale"
+      },
+      "headers": {
+        "label": "En-têtes personnalisés",
+        "add": "Ajouter un en-tête",
+        "key": {
+          "label": "Clé de l'en-tête",
+          "placeholder": "X-Request-ID"
+        },
+        "value": {
+          "label": "Valeur de l'en-tête",
+          "placeholder": "valeur"
+        }
+      },
+      "validation": {
+        "title": "Valider les outils",
+        "help": "Connectez-vous au serveur MCP, récupérez les outils disponibles et mettez-les en cache avant d'enregistrer. La validation attend un point de terminaison MCP HTTP Streamable.",
+        "button": "Valider et charger les outils",
+        "availableTools": "Outils disponibles",
+        "idle": "Validez ce serveur pour confirmer la connexion et charger ses outils disponibles.",
+        "stale": "Les détails de connexion ont changé. Validez à nouveau pour actualiser les outils en cache.",
+        "failed": "Impossible de valider ce serveur MCP.",
+        "success": "Validé avec succès. {{count}} outils sont disponibles.",
+        "syncedAt": "Dernière synchronisation : {{value}}",
+        "saveHint": "L'enregistrement validera la configuration actuelle si la liste des outils en cache est obsolète ou manquante."
+      },
+      "submit": "Enregistrer le serveur MCP",
+      "update": "Mettre à jour le serveur MCP"
+    },
+    "notification": {
+      "added": "Serveur MCP ajouté",
+      "updated": "Serveur MCP mis à jour",
+      "deleted": "Serveur MCP supprimé",
+      "validated": "{{count}} outils MCP chargés",
+      "toolsRefreshed": "Outils actualisés pour {{name}}",
+      "validationFailedTitle": "Échec de la validation MCP",
+      "storageBlockedTitle": "Page Assist ne peut pas enregistrer les données",
+      "storageBlockedDescription": "Le mode privé de Firefox ne prend pas en charge l'enregistrement de données dans IndexedDB. Veuillez gérer les serveurs MCP depuis une fenêtre normale."
+    }
+  },
+  "memory": {
+    "enableMemoryTool": {
+      "label": "Activer l'outil de mémoire"
+    }
+  }
+}

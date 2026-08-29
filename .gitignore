@@ -1,0 +1,36 @@
+# deps / build
+node_modules/
+dist/
+dist-ssr/
+.output/
+.wxt/
+.tanstack/
+.wrangler/
+*.local
+.env
+.env.*
+!.env.example
+
+# logs / OS
+*.log
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Python / Bazel leftovers from vendor/codex
+__pycache__/
+*.pyc
+/bazel-*
+vendor/codex/MODULE.bazel.lock
+
+# junk saved HTML from the dashboard copy
+apps/ollama-app/index_files/
+
+# secrets
+*.pem
+*.key
+xai-*.txt

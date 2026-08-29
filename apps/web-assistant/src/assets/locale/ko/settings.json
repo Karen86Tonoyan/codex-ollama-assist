@@ -1,0 +1,645 @@
+{
+  "generalSettings": {
+    "title": "일반 설정",
+    "settings": {
+      "heading": "웹 UI 설정",
+      "speechRecognitionLang": {
+        "label": "음성 인식 언어",
+        "placeholder": "언어 선택"
+      },
+      "language": {
+        "label": "언어",
+        "placeholder": "언어 선택"
+      },
+      "darkMode": {
+        "label": "테마 변경",
+        "options": {
+          "light": "라이트",
+          "dark": "다크"
+        }
+      },
+      "defaultCopilotPrompt": {
+        "label": "사이드 패널 기본 프롬프트 (Copilot)",
+        "placeholder": "프롬프트 선택"
+      },
+      "defaultWebUIPrompt": {
+        "label": "웹 UI 기본 프롬프트",
+        "placeholder": "프롬프트 선택"
+      },
+      "copilotResumeLastChat": {
+        "label": "사이드 패널을 열 때 마지막 채팅 재개 (Copilot)"
+      },
+      "turnOnChatWithWebsite": {
+        "label": "웹사이트와의 채팅 기본 활성화 (Copilot)"
+      },
+      "webUIResumeLastChat": {
+        "label": "웹 UI를 열 때 마지막 채팅 재개"
+      },
+      "hideCurrentChatModelSettings": {
+        "label": "현재 채팅 모델 설정 숨기기"
+      },
+      "restoreLastChatModel": {
+        "label": "이전 채팅에서 마지막 사용한 모델 복원"
+      },
+      "sendNotificationAfterIndexing": {
+        "label": "지식 베이스 처리 완료 후 알림 전송"
+      },
+      "generateTitle": {
+        "label": "AI로 제목 생성"
+      },
+      "ollamaStatus": {
+        "label": "Ollama 연결 상태 확인 활성화 또는 비활성화"
+      },
+      "wideMode": {
+        "label": "와이드 스크린 모드 활성화"
+      },
+      "openReasoning": {
+        "label": "추론 섹션을 기본적으로 열기"
+      },
+      "defaultThinkingMode": {
+        "label": "폼에서 사고 모드 상태 표시"
+      },
+      "userChatBubble": {
+        "label": "사용자 메시지에 채팅 버블 사용"
+      },
+      "autoCopyResponseToClipboard": {
+        "label": "응답 자동 클립보드 복사"
+      },
+      "useMarkdownForUserMessage": {
+        "label": "사용자 메시지에 마크다운 형식 사용"
+      },
+      "copyAsFormattedText": {
+        "label": "서식이 있는 텍스트로 복사"
+      },
+      "tabMentionsEnabled": {
+        "label": "탭 멘션 (@tab) 활성화"
+      },
+      "pasteLargeTextAsFile": {
+        "label": "큰 텍스트를 파일로 붙여넣기"
+      },
+      "ocrLanguage": {
+        "label": "기본 OCR 언어",
+        "placeholder": "OCR 언어 선택"
+      },
+      "sidepanelTemporaryChat": {
+        "label": "사이드 패널에서 임시 채팅 기본 활성화"
+      },
+      "webuiTemporaryChat": {
+        "label": "웹 UI에서 임시 채팅 기본 활성화"
+      },
+      "removeReasoningTagFromCopy": {
+        "label": "복사된 텍스트에서 추론 태그 제거"
+      },
+      "youtubeAutoSummarize": {
+        "label": "YouTube 동영상에 '요약' 버튼 표시"
+      },
+      "hideReasoningWidget": {
+        "label": "AI 메시지에서 추론 위젯 숨기기"
+      },
+      "persistChatInput": {
+        "label": "채팅 입력 유지 (미전송 메시지 저장)"
+      },
+      "enableMessageQueue": {
+        "label": "스트리밍 중 메시지 큐 활성화"
+      },
+      "optimizeQueueForSmallScreen": {
+        "label": "소형 화면을 위한 채팅 UI 최적화"
+      },
+      "tableTextWrap": {
+        "label": "마크다운 테이블에서 텍스트 줄 바꿈 활성화"
+      },
+      "showMoreForLargeMessage": {
+        "label": "긴 사용자 메시지에 '더 보기' 표시"
+      },
+      "sidebarPosition": {
+        "label": "사이드바 위치",
+        "options": {
+          "left": "왼쪽",
+          "right": "오른쪽"
+        }
+      },
+      "showMcpServersInChat": {
+        "label": "채팅에서 MCP 서버 토글 표시"
+      },
+      "enableAgentWebSearch": {
+        "label": "에이전트 웹 검색 사용 (모델이 검색 및 조회 시점을 결정)"
+      },
+      "mcpHumanInLoop": {
+        "label": "MCP 도구 실행 전 승인 요구"
+      },
+      "showProviderNameInModelList": {
+        "label": "모델 목록에 공급자 이름 표시"
+      }
+    },
+    "sidepanelRag": {
+      "heading": "검색 설정",
+      "ragEnabled": {
+        "label": "임베딩 및 검색 활성화"
+      },
+      "maxWebsiteContext": {
+        "label": "전체 컨텍스트 모드의 최대 콘텐츠 크기",
+        "placeholder": "콘텐츠 크기 (기본값 4028)"
+      }
+    },
+    "webSearch": {
+      "heading": "웹 검색 관리",
+      "searchMode": {
+        "label": "간편한 인터넷 검색 실행"
+      },
+      "provider": {
+        "label": "검색 엔진",
+        "placeholder": "검색 엔진 선택"
+      },
+      "totalSearchResults": {
+        "label": "총 검색 결과",
+        "placeholder": "총 검색 결과 입력"
+      },
+      "visitSpecificWebsite": {
+        "label": "메시지에 언급된 웹사이트 방문"
+      },
+      "searxng": {
+        "url": {
+          "label": "SearXNG URL"
+        }
+      },
+      "braveApi": {
+        "label": "Brave API 키",
+        "placeholder": "Brave API 키를 입력하세요"
+      },
+      "tavilyApi": {
+        "label": "Tavily API 키",
+        "placeholder": "Tavily API 키를 입력하세요"
+      },
+      "exa": {
+        "label": "Exa API 키",
+        "placeholder": "Exa API 키를 입력하세요"
+      },
+      "googleDomain": {
+        "label": "Google 도메인"
+      },
+      "searchOnByDefault": {
+        "label": "기본적으로 인터넷 검색 켜기"
+      },
+      "firecrawlAPIKey": {
+        "label": "Firecrawl API 키",
+        "placeholder": "Firecrawl API 키를 입력하세요"
+      },
+      "domainFilter": {
+        "label": "도메인 필터 목록",
+        "description": "이 도메인의 결과만 표시",
+        "placeholder": "예: example.com"
+      },
+      "blockedDomains": {
+        "label": "차단된 도메인",
+        "description": "이 도메인의 결과 제외",
+        "placeholder": "예: spam.com"
+      }
+    },
+    "system": {
+      "heading": "시스템 설정",
+      "deleteChatHistory": {
+        "label": "시스템 초기화",
+        "button": "전체 초기화",
+        "confirm": "시스템을 초기화하시겠습니까? 모든 데이터가 삭제되며 되돌릴 수 없습니다."
+      },
+      "export": {
+        "label": "모든 데이터 내보내기 (채팅 기록, 지식 베이스, 프롬프트, 설정)",
+        "button": "데이터 내보내기",
+        "success": "내보내기 성공"
+      },
+      "import": {
+        "label": "모든 데이터 가져오기 (채팅 기록, 지식 베이스, 프롬프트, 설정)",
+        "button": "데이터 가져오기",
+        "success": "가져오기 성공",
+        "error": "가져오기 오류"
+      },
+      "actionIcon": {
+        "label": "확장 아이콘 클릭 기본 동작 설정"
+      },
+      "contextMenu": {
+        "label": "컨텍스트 메뉴 기본 동작 설정"
+      },
+      "fontSize": {
+        "label": "글꼴 크기"
+      },
+      "webuiBtnSidePanel": {
+        "label": "사이드 패널에 웹 UI 버튼 표시"
+      },
+      "chatBackgroundImage": {
+        "label": "채팅 배경 이미지"
+      },
+      "storageSyncEnabled": {
+        "label": "브라우저 저장소 동기화 활성화 (기기 간 설정 동기화)"
+      }
+    },
+    "tts": {
+      "heading": "텍스트 음성 변환 설정",
+      "ttsEnabled": {
+        "label": "텍스트 음성 변환 활성화"
+      },
+      "ttsAutoPlay": {
+        "label": "응답 완료 후 자동 음성 재생"
+      },
+      "ttsProvider": {
+        "label": "텍스트 음성 변환 제공자",
+        "placeholder": "제공자 선택"
+      },
+      "ttsVoice": {
+        "label": "텍스트 음성 변환 음성",
+        "placeholder": "음성 선택"
+      },
+      "ssmlEnabled": {
+        "label": "SSML (Speech Synthesis Markup Language) 활성화"
+      },
+      "responseSplitting": {
+        "label": "응답 분할"
+      },
+      "removeReasoningTagTTS": {
+        "label": "TTS에서 추론 태그 제거"
+      }
+    },
+    "stt": {
+      "heading": "음성 인식 설정",
+      "autoStopTimeout": {
+        "label": "자동 중지 시간 (ms)",
+        "placeholder": "자동 중지 시간을 밀리초 단위로 입력하세요"
+      },
+      "autoSubmitVoiceMessage": {
+        "label": "음성 메시지 자동 전송"
+      }
+    }
+  },
+  "manageModels": {
+    "title": "모델 관리",
+    "addBtn": "새 모델 추가",
+    "columns": {
+      "name": "이름",
+      "digest": "다이제스트",
+      "nickname": "닉네임",
+      "modifiedAt": "수정 일시",
+      "size": "크기",
+      "actions": "동작"
+    },
+    "expandedColumns": {
+      "parentModel": "상위 모델",
+      "format": "형식",
+      "family": "패밀리",
+      "parameterSize": "파라미터 크기",
+      "quantizationLevel": "양자화 수준"
+    },
+    "tooltip": {
+      "delete": "모델 삭제",
+      "repull": "모델 다시 가져오기",
+      "editNickname": "닉네임 수정"
+    },
+    "confirm": {
+      "delete": "이 모델을 정말 삭제하시겠습니까?",
+      "repull": "이 모델을 정말 다시 가져오시겠습니까?"
+    },
+    "modal": {
+      "title": "새 모델 추가",
+      "placeholder": "모델 이름 입력",
+      "pull": "모델 가져오기"
+    },
+    "notification": {
+      "pullModel": "모델 가져오는 중",
+      "pullModelDescription": "{{modelName}} 모델을 가져오는 중입니다. 자세한 내용은 확장 기능 아이콘을 확인하세요.",
+      "cancellingDownload": "다운로드 취소 중",
+      "cancellingDownloadDescription": "모델 다운로드가 취소되고 있습니다...",
+      "success": "성공",
+      "error": "오류",
+      "successDescription": "모델 가져오기가 완료되었습니다",
+      "successDeleteDescription": "모델 삭제가 완료되었습니다",
+      "someError": "문제가 발생했습니다. 나중에 다시 시도해 주세요."
+    }
+  },
+  "managePrompts": {
+    "title": "프롬프트 관리",
+    "addBtn": "새 프롬프트 추가",
+    "option1": "일반",
+    "option2": "RAG",
+    "questionPrompt": "질문 프롬프트",
+    "segmented": {
+      "custom": "커스텀 프롬프트",
+      "copilot": "Copilot 프롬프트"
+    },
+    "columns": {
+      "title": "제목",
+      "prompt": "프롬프트",
+      "type": "프롬프트 유형",
+      "actions": "동작"
+    },
+    "systemPrompt": "시스템 프롬프트",
+    "quickPrompt": "퀵 프롬프트",
+    "tooltip": {
+      "delete": "프롬프트 삭제",
+      "edit": "프롬프트 수정"
+    },
+    "confirm": {
+      "delete": "이 프롬프트를 정말 삭제하시겠습니까? 이 작업은 되돌릴 수 없습니다."
+    },
+    "modal": {
+      "addTitle": "새 프롬프트 추가",
+      "editTitle": "프롬프트 수정"
+    },
+    "form": {
+      "title": {
+        "label": "제목",
+        "placeholder": "훌륭한 프롬프트",
+        "required": "제목을 입력하세요"
+      },
+      "prompt": {
+        "label": "프롬프트",
+        "placeholder": "프롬프트 입력",
+        "required": "프롬프트를 입력하세요",
+        "help": "프롬프트 내에서 {key}를 변수로 사용할 수 있습니다.",
+        "missingTextPlaceholder": "프롬프트에 {text} 변수가 없습니다. 추가해 주세요."
+      },
+      "isSystem": {
+        "label": "시스템 프롬프트"
+      },
+      "btnSave": {
+        "saving": "프롬프트 추가 중...",
+        "save": "프롬프트 추가"
+      },
+      "btnEdit": {
+        "saving": "프롬프트 업데이트 중...",
+        "save": "프롬프트 업데이트"
+      }
+    },
+    "notification": {
+      "addSuccess": "프롬프트가 추가되었습니다",
+      "addSuccessDesc": "프롬프트가 정상적으로 추가되었습니다",
+      "error": "오류",
+      "someError": "문제가 발생했습니다. 나중에 다시 시도해 주세요.",
+      "updatedSuccess": "프롬프트가 업데이트되었습니다",
+      "updatedSuccessDesc": "프롬프트가 정상적으로 업데이트되었습니다",
+      "deletedSuccess": "프롬프트가 삭제되었습니다",
+      "deletedSuccessDesc": "프롬프트가 정상적으로 삭제되었습니다"
+    }
+  },
+  "manageShare": {
+    "title": "공유 관리",
+    "heading": "페이지 공유 URL 설정",
+    "form": {
+      "url": {
+        "label": "페이지 공유 URL",
+        "placeholder": "페이지 공유 URL 입력",
+        "required": "페이지 공유 URL을 입력해 주세요!",
+        "help": "개인정보 보호를 위해 페이지 공유를 자체 호스팅하고, 해당 URL을 여기에 입력할 수 있습니다. <anchor>자세히 보기</anchor>"
+      }
+    },
+    "webshare": {
+      "heading": "웹 공유",
+      "columns": {
+        "title": "제목",
+        "url": "URL",
+        "actions": "동작"
+      },
+      "tooltip": {
+        "delete": "공유 삭제"
+      },
+      "confirm": {
+        "delete": "이 공유를 정말 삭제하시겠습니까? 이 작업은 되돌릴 수 없습니다."
+      },
+      "label": "페이지 공유 관리",
+      "description": "페이지 공유 기능을 활성화 또는 비활성화"
+    },
+    "notification": {
+      "pageShareSuccess": "페이지 공유 URL이 정상적으로 업데이트되었습니다",
+      "someError": "문제가 발생했습니다. 나중에 다시 시도해 주세요.",
+      "webShareDeleteSuccess": "웹 공유가 정상적으로 삭제되었습니다"
+    }
+  },
+  "ollamaSettings": {
+    "title": "Ollama 설정",
+    "heading": "Ollama 설정하기",
+    "settings": {
+      "ollamaUrl": {
+        "label": "Ollama URL",
+        "placeholder": "Ollama URL 입력"
+      },
+      "globalEnable": {
+        "label": "Ollama 통합 기능 전역 활성화 또는 비활성화",
+        "warning": "Ollama 통합을 전역적으로 비활성화하면 Page Assist가 Ollama에서 모델을 가져오지 않습니다. <anchor>OpenAI 호환 API</anchor> 섹션에서 Ollama 인스턴스를 추가할 수 있으며 정상적으로 작동합니다."
+      },
+      "advanced": {
+        "label": "Ollama URL 고급 설정",
+        "urlRewriteEnabled": {
+          "label": "사용자 지정 Origin URL 활성화 또는 비활성화"
+        },
+        "rewriteUrl": {
+          "label": "사용자 지정 Origin URL",
+          "placeholder": "사용자 지정 Origin URL 입력"
+        },
+        "autoCORSFix": {
+          "label": "자동 Ollama CORS 수정 활성화 또는 비활성화"
+        },
+        "headers": {
+          "label": "사용자 지정 헤더",
+          "add": "헤더 추가",
+          "key": {
+            "label": "헤더 키",
+            "placeholder": "인증"
+          },
+          "value": {
+            "label": "헤더 값",
+            "placeholder": "베어러 토큰"
+          }
+        },
+        "help": "Page Assist에서 Ollama 연결에 문제가 있는 경우 사용자 지정 Origin URL을 설정할 수 있습니다. 설정에 대한 자세한 내용은 <anchor>여기를 클릭</anchor>하세요."
+      }
+    }
+  },
+  "manageSearch": {
+    "title": "웹 검색 관리",
+    "heading": "웹 검색 설정하기"
+  },
+  "mcpSettings": {
+    "title": "MCP 서버",
+    "heading": "MCP 서버 관리",
+    "subheading": "베어러 인증과 사용자 지정 헤더를 포함하여 일반 채팅용 HTTP MCP 서버를 추가하세요.",
+    "addBtn": "MCP 서버 추가",
+    "humanInLoop": {
+      "label": "MCP 도구 실행 전 승인 요구",
+      "description": "쓰기 권한이 있거나 기타 부수 효과가 있는 MCP 서버에 권장됩니다. 아래에서 개별 도구를 계속 허용하거나 비활성화할 수 있습니다.",
+      "enabledHint": "휴먼 인 더 루프가 활성화되어 있습니다. MCP 도구는 실행 전에 승인을 요청합니다.",
+      "disabledHint": "MCP 도구는 기본적으로 승인 없이 실행됩니다. MCP 서버가 파일을 쓰거나 데이터를 수정하거나 메시지를 보내거나 기타 변경을 할 수 있는 경우 이 옵션을 켜세요."
+    },
+    "table": {
+      "name": "이름",
+      "url": "URL",
+      "tools": "캐시된 도구",
+      "status": "검증",
+      "notValidated": "아직 검증되지 않음",
+      "toolsUnavailable": "캐시된 도구 없음",
+      "auth": "인증",
+      "enabled": "활성화",
+      "actions": "동작",
+      "toolName": "도구 이름",
+      "toolDescription": "설명"
+    },
+    "actions": {
+      "refreshTools": "도구 새로고침",
+      "enable": "활성화",
+      "disable": "비활성화"
+    },
+    "status": {
+      "ready": "사용 가능한 도구 {{count}}개",
+      "failed": "검증 실패",
+      "notValidated": "검증되지 않음",
+      "lastChecked": "마지막 확인: {{value}}"
+    },
+    "auth": {
+      "none": "인증 없음",
+      "bearer": "베어러 토큰"
+    },
+    "modal": {
+      "titleAdd": "MCP 서버 추가",
+      "titleEdit": "MCP 서버 편집",
+      "deleteConfirm": "{{name}}을(를) 삭제하시겠습니까?",
+      "name": {
+        "label": "서버 이름",
+        "placeholder": "내 MCP 서버",
+        "required": "서버 이름을 입력하세요"
+      },
+      "url": {
+        "label": "서버 URL",
+        "placeholder": "https://example.com/mcp",
+        "help": "현재는 HTTP 또는 HTTPS를 통한 Streamable HTTP MCP 엔드포인트만 지원됩니다.",
+        "required": "서버 URL을 입력하세요",
+        "invalid": "유효한 HTTP 또는 HTTPS URL을 입력하세요"
+      },
+      "transportNotice": {
+        "title": "전송 방식 지원",
+        "description": "Page Assist는 Streamable HTTP MCP 서버만 지원합니다. /sse 또는 /messages?sessionId=... 와 같은 레거시 SSE 엔드포인트는 지원되지 않습니다."
+      },
+      "auth": {
+        "label": "인증"
+      },
+      "bearerToken": {
+        "label": "베어러 토큰",
+        "placeholder": "베어러 토큰을 입력하세요",
+        "required": "베어러 토큰을 입력하세요"
+      },
+      "enabled": {
+        "label": "전역 활성화"
+      },
+      "headers": {
+        "label": "사용자 지정 헤더",
+        "add": "헤더 추가",
+        "key": {
+          "label": "헤더 키",
+          "placeholder": "X-Request-ID"
+        },
+        "value": {
+          "label": "헤더 값",
+          "placeholder": "값"
+        }
+      },
+      "validation": {
+        "title": "도구 검증",
+        "help": "MCP 서버에 연결하여 사용 가능한 도구를 가져오고 저장하기 전에 캐시합니다. 검증에는 Streamable HTTP MCP 엔드포인트가 필요합니다.",
+        "button": "검증하고 도구 불러오기",
+        "availableTools": "사용 가능한 도구",
+        "idle": "이 서버를 검증하여 연결을 확인하고 사용 가능한 도구를 불러오세요.",
+        "stale": "연결 정보가 변경되었습니다. 캐시된 도구를 새로고침하려면 다시 검증하세요.",
+        "failed": "이 MCP 서버를 검증할 수 없습니다.",
+        "success": "검증에 성공했습니다. {{count}}개의 도구를 사용할 수 있습니다.",
+        "syncedAt": "마지막 동기화: {{value}}",
+        "saveHint": "캐시된 도구 목록이 오래되었거나 없는 경우 저장 시 현재 설정을 검증합니다."
+      },
+      "submit": "MCP 서버 저장",
+      "update": "MCP 서버 업데이트"
+    },
+    "notification": {
+      "added": "MCP 서버가 추가되었습니다",
+      "updated": "MCP 서버가 업데이트되었습니다",
+      "deleted": "MCP 서버가 삭제되었습니다",
+      "validated": "MCP 도구 {{count}}개를 불러왔습니다",
+      "toolsRefreshed": "{{name}}의 도구를 새로고침했습니다",
+      "validationFailedTitle": "MCP 검증 실패",
+      "storageBlockedTitle": "Page Assist가 데이터를 저장할 수 없습니다",
+      "storageBlockedDescription": "Firefox 사생활 보호 모드에서는 IndexedDB에 데이터를 저장할 수 없습니다. 일반 창에서 MCP 서버를 관리해 주세요."
+    }
+  },
+  "about": {
+    "title": "소개",
+    "heading": "소개",
+    "chromeVersion": "Page Assist 버전",
+    "ollamaVersion": "Ollama 버전",
+    "support": "Page Assist 프로젝트는 다음 플랫폼에서 기부나 후원을 통해 지원할 수 있습니다:",
+    "koFi": "Ko-fi로 후원하기",
+    "githubSponsor": "GitHub에서 후원하기",
+    "githubRepo": "GitHub 저장소"
+  },
+  "manageKnowledge": {
+    "title": "지식 관리",
+    "heading": "지식 베이스 구성하기"
+  },
+  "rag": {
+    "title": "Pipeline 설정",
+    "ragSettings": {
+      "label": "RAG 설정",
+      "model": {
+        "label": "임베딩 모델",
+        "required": "모델을 선택해주세요",
+        "help": "`nomic-embed-text`와 같은 임베딩 모델 사용을 강력히 권장합니다.",
+        "placeholder": "모델 선택"
+      },
+      "chunkSize": {
+        "label": "청크 크기",
+        "placeholder": "청크 크기 입력",
+        "required": "청크 크기를 입력해주세요"
+      },
+      "chunkOverlap": {
+        "label": "청크 오버랩",
+        "placeholder": "청크 오버랩 입력",
+        "required": "청크 오버랩을 입력해주세요"
+      },
+      "totalFilePerKB": {
+        "label": "지식 베이스 기본 파일 업로드 제한",
+        "placeholder": "기본 파일 업로드 제한 입력 (예: 10)",
+        "required": "기본 파일 업로드 제한을 입력해주세요"
+      },
+      "noOfRetrievedDocs": {
+        "label": "검색 문서 수",
+        "placeholder": "검색 문서 수 입력",
+        "required": "검색 문서 수를 입력해주세요"
+      },
+      "splittingSeparator": {
+        "label": "구분자",
+        "placeholder": "구분자 입력 (예: \\n\\n)",
+        "required": "구분자를 입력해주세요"
+      },
+      "splittingStrategy": {
+        "label": "텍스트 분할기"
+      }
+    },
+    "prompt": {
+      "label": "RAG 프롬프트 설정",
+      "option1": "일반",
+      "option2": "웹",
+      "alert": "여기서 시스템 프롬프트를 설정하는 것은 더 이상 권장되지 않습니다. 프롬프트 추가 및 편집은 '프롬프트 관리' 섹션을 이용해주세요. 이 섹션은 향후 릴리스에서 제거될 예정입니다.",
+      "systemPrompt": "시스템 프롬프트",
+      "systemPromptPlaceholder": "시스템 프롬프트 입력",
+      "webSearchPrompt": "웹 검색 프롬프트",
+      "webSearchPromptHelp": "프롬프트에서 `{search_results}`를 제거하지 마세요.",
+      "webSearchPromptError": "웹 검색 프롬프트를 입력해주세요",
+      "webSearchPromptPlaceholder": "웹 검색 프롬프트 입력",
+      "webSearchFollowUpPrompt": "웹 검색 후속 프롬프트",
+      "webSearchFollowUpPromptHelp": "프롬프트에서 `{chat_history}`와 `{question}`를 제거하지 마세요.",
+      "webSearchFollowUpPromptError": "웹 검색 후속 프롬프트를 입력해주세요!",
+      "webSearchFollowUpPromptPlaceholder": "웹 검색 후속 프롬프트"
+    }
+  },
+  "chromeAiSettings": {
+    "title": "Chrome AI 설정"
+  },
+  "memory": {
+    "enableMemoryTool": {
+      "label": "메모리 도구 활성화"
+    }
+  },
+  "mermaid": "Mermaid"
+}
