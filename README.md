@@ -40,7 +40,7 @@ To **nie** jest zlepka Page Assist + AlfaBrowserautomation + UI-TARS w jeden mer
 
 ```powershell
 cd C:\Users\PC\codex-ollama-assist
-git submodule update --init --depth 1
+.\scripts\clone-codex.ps1          # vendor/codex  (płytki clone, bez kopiowania Bazela do tego repo)
 .\scripts\doctor.ps1
 .\scripts\start-stack.ps1
 ```
