@@ -1,63 +1,86 @@
 # Codex + Ollama + Web Assistant
 
-Jedno repo: **Codex OSS**, **aplikacja Ollama** (dashboard) i **web asystent** (Page Assist). Wszystkie trzy mówią do lokalnego Ollama na `127.0.0.1:11434`.
+> **Local-development workspace for a Codex snapshot, an Ollama dashboard and a browser assistant**
 
-To **nie** jest zlepka Page Assist + AlfaBrowserautomation + UI-TARS w jeden merge. Bramka HOLD/ALLOW zostaje osobno.
+This repository groups three independently installable projects around a local
+Ollama endpoint. It is not a single package manager workspace and its
+components should be installed in their own directories.
 
-```
-┌──────────────────────┐   ┌─────────────────────┐   ┌──────────────────┐
-│ apps/web-assistant   │   │ apps/ollama-app     │   │ vendor/codex     │
-│ Page Assist (WXT)    │   │ Vite dashboard      │   │ Codex OSS (CLI)  │
-│ sidebar + chat strony│   │ panele Ollama/MCP   │   │ agent w terminalu│
-└──────────┬───────────┘   └──────────┬──────────┘   └────────┬─────────┘
-           │                          │                       │
-           └──────────────┬───────────┴───────────────────────┘
-                          ▼
-                 http://127.0.0.1:11434
-                    Ollama
-                 gpt-oss:20b-gpu
+## Components
+
+```text
+apps/ollama-app/       Vite dashboard and FastAPI gateway
+apps/web-assistant/    Page Assist browser extension / web UI
+vendor/codex/          optional shallow Codex source checkout
+scripts/               Windows PowerShell setup, diagnostics and launch helpers
+docker-compose.yml     optional local Ollama container
 ```
 
-## Layout
+The Ollama dashboard includes chat, model, MCP, plugin, workflow, browser,
+media and Guard/Cerber-oriented panels. Its Python backend provides a FastAPI
+gateway, model routing and UI-TARS-related modules. The web assistant includes
+an isolated `extensions/page-action` project that exposes active-tab actions
+through Chrome's debugger API.
 
-| Path | Source | Role |
-|---|---|---|
-| `vendor/codex/` | [Karen86Tonoyan/codexOPENSOURCE](https://github.com/Karen86Tonoyan/codexOPENSOURCE) (`scripts/clone-codex.ps1`) | Codex CLI / agent |
-| `apps/ollama-app/` | lokalne `ollamaagentalfa-main` | web UI Ollama |
-| `apps/web-assistant/` | lokalne `page-assistALFA` | rozszerzenie: sidebar + chat ze stroną |
-| `config/codex-ollama.toml` | to repo | Codex → Ollama `/v1` |
-| `scripts/` | to repo | `doctor`, `start-stack`, `use-ollama-for-codex` |
+## Requirements
 
-## Wymagania
+- Windows PowerShell for the root helper scripts;
+- Node.js/npm for `apps/ollama-app`;
+- Bun for the Page Assist application and its page-action extension;
+- Python for `apps/ollama-app/backend`;
+- an Ollama service, normally reachable at `127.0.0.1:11434`.
 
-- Ollama na `127.0.0.1:11434`
-- model `gpt-oss:20b-gpu` (MXFP4). **Nie** `gpt-oss-20b-unblocked` (Qwen F16, 32k)
-- Node 20+ (dashboard)
-- Bun (Page Assist)
-- Git (clone Codex do `vendor/codex`)
+## Start with diagnostics
 
-## Start
+The root package declares:
 
 ```powershell
-cd C:\Users\PC\codex-ollama-assist
-.\scripts\clone-codex.ps1          # vendor/codex  (płytki clone, bez kopiowania Bazela do tego repo)
-.\scripts\doctor.ps1
-.\scripts\start-stack.ps1
+npm run doctor
+npm run start
 ```
 
-1. Ollama — `http://127.0.0.1:11434`
-2. Dashboard — `http://localhost:5173`
-3. Page Assist — `bun install` + `bun run build:chrome` w `apps/web-assistant`, potem Chrome → Load unpacked → `.output/chrome-mv3`
-4. Codex — `.\scripts\use-ollama-for-codex.ps1`, potem `codex --model gpt-oss:20b-gpu`
+`doctor` runs `scripts/doctor.ps1`; `start` runs `scripts/start-stack.ps1`.
+Review those scripts and install the individual component dependencies before
+expecting all services to start.
 
-## Zasady
+### Ollama dashboard
 
-- **HOLD zostaje HOLD.** W Secure Mode Page Assist nie wysyła treści karty do Ollama, dopóki bramka nie powie ALLOW/SANITIZE.
-- Ollama tylko na localhost. Nie wystawiaj `11434` na WAN.
-- `.env` nie wchodzi do gita.
+```bash
+cd apps/ollama-app
+npm ci
+npm run dev
+```
 
-## Licencje
+For the gateway:
 
-- Codex OSS — Apache-2.0 (upstream OpenAI, fork Karen86Tonoyan)
-- Page Assist — oryginalna licencja n4ze3m w `apps/web-assistant/LICENCE`
-- Dashboard — jak w `apps/ollama-app`
+```bash
+cd apps/ollama-app/backend
+python -m pip install -r requirements.txt
+uvicorn main:app --reload
+```
+
+### Browser assistant
+
+Follow `apps/web-assistant/README.md` for its separate Bun/WXT build process.
+The root shortcut `npm run assist:build` builds the Chrome target only after
+that project's dependencies are available.
+
+## Configuration and privacy
+
+This workspace is designed around a local Ollama address, but optional
+providers, browser actions and plugins may have separate configuration.
+Do not store model-provider tokens, browser session data or user content in
+tracked files. Page-action commands can control the active tab; inspect its
+consent and tool implementation before enabling it.
+
+## Status
+
+The repository is an integration workspace with multiple in-progress modules.
+A panel being visible does not confirm that a corresponding external service is
+installed or configured. Validate each component independently before relying
+on it for automation.
+
+## Licence and provenance
+
+See `NOTICE`, the component-level documentation and the vendored-source notes
+for applicable terms. No single root licence file is present.
