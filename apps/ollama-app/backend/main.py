@@ -15,6 +15,7 @@ import shutil
 import json
 import tempfile
 import uuid
+from artifacts.alfa_os.openai_compat import compat_router
 
 # Load config
 with open("config.yaml") as f:
@@ -57,6 +58,7 @@ app.add_middleware(
     allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allow_headers=["Authorization", "Content-Type", "X-Client-Info"],
 )
+app.include_router(compat_router)
 
 
 # ── Security Headers Middleware ──────────────────────────────
